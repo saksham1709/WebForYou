@@ -1,0 +1,555 @@
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&family=Shippori+Mincho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+.nav{
+    width: 100%;
+}
+.upper-nav {
+    display: flex;
+    align-items: center;
+}
+.upper-nav .logo-img{
+    width: 50px;
+    height: 50px;
+    margin: 5px 20px;
+}
+.upper-nav .L-un-items{
+    width: 69%;
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    font-family: 'RocknRoll One', sans-serif;
+}
+.upper-nav .L-un-items a{
+    text-decoration: none;
+    color: black;
+}
+.upper-nav .L-un-items a h1:hover{
+    color: rgb(198, 198, 226);
+}
+.upper-nav .R-un-items{
+    display: flex;
+}
+.upper-nav .R-un-items a{
+    padding: 15px;
+    margin: 8px;
+    font-style: none;
+    text-decoration: none;
+    font-size: 11px;
+    border: 2px solid rgb(161, 147, 147);
+    color: black;
+    cursor: pointer;
+    background: none;
+}
+.upper-nav .R-un-items img{
+    position: relative;
+    top: 20px;
+    width: 24px;
+    height: 24px ;
+}
+.upper-nav .R-un-items a:hover{
+    background-color: skyblue;
+}
+.lower-nav{
+    display: flex;
+    align-items: center;
+    background: url('./img/intro-img.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+    position: sticky;
+    top: 0;
+}
+.p-l-nav{
+    background: url('./img/pro.jpg');
+} 
+.lower-nav .L-ln-items{
+    /* width: 68%; */
+    width: 38%;
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    font-family: 'Shippori Mincho', serif;
+}  
+.lower-nav .L-ln-items ul{
+    display: flex;
+    list-style: none;
+    margin: auto;
+} 
+.lower-nav .L-ln-items ul li{
+    padding: 20px;
+} 
+.lower-nav .L-ln-items ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bolder;
+}
+.lower-nav .L-ln-items ul li a:hover{
+    color: skyblue;
+}
+.lower-nav .R-ln-items{
+    /* display: flex;
+    align-items: center;
+    position: relative;
+    left: 109px; */
+    width: 26%;
+    text-align: center;
+    position: relative;
+    padding: 1px 18px;
+    left: 32vw;
+}
+.lower-nav .R-ln-items a{
+    padding: 12px;
+    margin: 12px;
+    text-decoration: none;
+}
+.burger {
+    display: none;
+    cursor: pointer;
+}
+.mac-burger{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+    visibility: hidden;
+    border: 1px solid blue;
+    border-radius: 32px;
+    padding: 6px;
+    background-color: #7087f7;
+}
+.mac-line{
+    width: 4px;
+    background-color: white;
+    height: 26px;
+    margin: 5px 3px;
+}
+.line {
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+
+
+.intro{
+    height: 90vh;
+    background: url('./img/intro-img.jpg');
+    background-size: cover;
+    /* background-blend-mode: darken; */
+    display: flex;
+    justify-content: center;
+}
+.intro .intro-text {
+    display: block;
+    margin: auto;
+    margin-top: 14%;
+    color: white;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.ml6 {
+    font-weight: bolder;
+    font-size: 3.3em;
+}
+.intro .para{
+    margin-bottom: 20px;
+}
+.ml6 .text-wrapper {
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+}
+
+.ml6 .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+.ml5 {
+    position: relative;
+    font-weight:bolder;
+    font-size: 1.8em;
+}
+
+.ml5 .wrapper {
+    position: relative;
+    bottom: 20px;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+}
+
+.ml5 .word {
+    display: inline-block;
+    line-height: 1.6em;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff2f6;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.sec{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+    font-family: 'Baloo Bhai 2', cursive;
+    padding: 10px;
+}
+.sec-left{
+    flex-direction: row-reverse;
+}
+.about-box{
+    padding: 0px 18px;
+}
+.about-head{
+    padding: 16px 0;
+    font-size: 1.5rem;
+    display: inline-block;
+}
+.ab-img{
+    width: 30vw;
+    border: 2px solid gray;
+    margin: 19px;
+}
+.h1{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin-top: 18px;
+}
+.about-box a{
+    text-decoration: none;
+    color: black;
+}
+.about-box a:hover{
+    color: rgb(116, 168, 189);
+}
+.me{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background:url('http://www.pavelhuza.com/images/stream.jpg');
+    background-size: contain;
+    height: 54vh;
+    margin-top: 60px;
+    opacity: 0.9;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.me-w{
+    width: 70%;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.me-box{
+    font-size: 45px;
+    font-weight: bolder;
+    margin-top: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.me-para{
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bolder;
+    font-family: 'Shippori Mincho B1', serif;
+}
+.contact{
+    background-color: #f6f5f4;
+    height: 65vh;
+    font-family: 'Shippori Mincho', serif;
+}
+.text-center{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 35px;
+}
+.form{
+    max-width: 40%;
+    margin: 30px auto;
+}
+.form-input{
+    margin: 16px 0;
+    padding: 12px 10px;
+    width: 100%;
+    font-size: 20px;
+    border: 1px solid #525050;
+}
+.btn{
+    background-color: #00C5BE;
+   border: none;
+   color: #fff;
+   font-size: 1em;
+   padding: 10px 50px;
+   text-transform: uppercase;
+   font-weight: normal;
+   cursor: pointer;
+}
+.btn:hover{
+    color:#00C5BE ;
+    background-color: white;
+    border:2px solid #00C5BE;
+}
+.langs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #f5ede3;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.langs h1{
+    font-size: 35px;
+    font-weight: bolder;
+    margin: 25px;
+}
+.l-img{
+    padding: 0px 42px;
+    margin-bottom: 20px;
+}
+.background{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e6ccac;
+}
+#scrollToTopBtn {
+    background-color: black;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 16px;
+    width: 24px;
+    margin-bottom: 12px;
+    margin-top: -2vw;
+    outline: none;
+}
+#scrollToTopBtn:hover{
+    background:none;
+}
+.text-footer{
+    text-align: center;
+    padding: 30px 0;
+    font-family: 'RocknRoll One', sans-serif;
+   display: flex;
+   justify-content: center;
+   color: rgb(65, 56, 56);
+   font-weight: bolder;
+   
+}
+.project{
+    height: 60vh;
+    background: url('./img/pro.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+.project h1{
+    display: block;
+    font-size: 3.5rem;
+    font-weight: bolder;
+    margin-top: 9%;
+    color: black;
+}
+
+@media only screen and (max-width: 1109px) {
+    .lower-nav {
+        height: 450px;
+        flex-direction: column;
+        align-items: center;
+        transition: all 0.7s ease-out;
+    }
+
+    .burger {
+        display: block;
+        position: absolute;
+        top: 15px;
+        left: 30px;
+    }
+    .lower-nav .R-ln-items{
+        left: 0;
+    }
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ic {
+        display: flex;
+        justify-content: center;
+    }
+
+    .op {
+        opacity: 0;
+    }
+
+    .resp {
+        height: 72px;
+    }
+
+}
+
+@media only screen and (min-width:846px) and (max-width: 1036px) {
+    .upper-nav .L-un-items{
+        width: 62%;
+    }
+    .intro{
+        height: 70vh;
+    }
+}
+@media only screen and (min-width:716px) and (max-width: 845px){
+    .upper-nav .L-un-items{
+        width: 54%;
+    }
+    .l-img{
+        padding: 0px 26px;
+    }
+    .intro{
+        height: 60vh;
+    }
+    .me-box{
+        margin-top: 6px;
+    }
+    .me{
+        height: 62vh;
+    }
+    .contact{
+        height: 56vh;
+    }
+}
+@media only screen and (max-width:715px){
+    .upper-nav {
+        flex-direction: column;
+        align-items: center;
+        height: 230px;
+        transition: all 0.7s ease-out;
+    }
+    .upper-nav .L-un-items{
+        width: auto;
+    }
+    .upper-nav .R-un-items{
+        flex-direction: column;
+    }
+    .upper-nav .R-un-items img{
+        top: 1px;
+    }
+    .upper-nav .R-un-items a{
+        border: none;
+        position: relative;
+        left: 34px;
+        bottom: 34px;
+        margin: 0;
+    }
+    .upper-nav .R-un-items a:hover{
+        background-color:white;
+    }
+    .upper-nav .R-un-items a h1:hover{
+        color: skyblue;
+    }
+    .mac-burger{
+        visibility: visible;
+    }
+    .opac{
+       opacity: 0;
+    }
+    .respo{
+        height: 72px;
+    }
+    .intro{
+        height: 65vh;
+    }
+    .me-box{
+        margin: 5px;
+    }
+    .me{
+        height: 58vh;
+    }
+    .ml6{
+        font-size: 2.3em;
+    }
+    .ml5{
+        font-size: 1.2em;
+    }
+    .me-box{
+        font-size: 36px;
+    }
+    .me-para{
+        margin-top: 0px;
+        font-size: 12px;
+    }
+    .l-img{
+        padding: 0px 10px;
+        width: 42px;
+    }
+    .langs h1{
+        font-size: 16px;
+        margin: 22px;
+    }
+    .contact{
+        height: 48vh;
+    }
+    .text-center{
+        padding-top: 24px;
+        font-size: 28px;
+    }
+    .form{
+        max-width: 50%;
+        margin: 10px auto;
+    }
+    .form-input{
+        margin: 10px 0;
+        padding: 10px 10px;
+        width: 100%;
+        font-size: 14px;
+        border: 1px solid #525050;
+    }
+    .btn{
+        font-size: 16px;
+        padding: 8px 20px;
+    }
+    .sec{
+        flex-direction: column-reverse;
+    }
+    .sec-left{
+        flex-direction: column-reverse;
+    }
+    .about-img{
+        width: 54vw;
+        margin-right: 27vw;
+    }
+    .ab-img{
+        width: 54vw;
+    }
+    .about-head{
+        font-size: 1.2em;
+    }
+    .about-para{
+        font-size: 0.8em;
+    }
+    .text-footer{
+        font-size: 10px;
+    }
+} 
+
+
+
+
+ 

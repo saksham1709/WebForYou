@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>WebForYou</title>
+    <link rel = "icon" href = "./img/logo.png" type = "image/x-icon"> 
+</head>
+<body>
+    <nav class="upper-nav respo">
+        <div class="L-un-items">
+            <a href="./index.html"><img src="./img/logo.png" class="logo-img"></a>
+            <a href="./index.html"><h1>Webforyou</h1></a>
+        </div>
+        <div class="R-un-items opac">
+            <img src="https://img.icons8.com/android/24/000000/outgoing-call.png" />
+            <a href="tel:+91-9205209865">+91-9205209865</a>
+            <img src="https://img.icons8.com/ios-filled/24/000000/email-open.png" />
+            <a href="mailto: sakshamsharma1709@gmail.com">Email</a>
+        </div>
+        <div class="mac-burger">
+            <div class="mac-line"></div>
+            <div class="mac-line"></div>
+            <div class="mac-line"></div>
+        </div>
+    </nav>
+    <nav class="lower-nav p-l-nav resp">
+        <div class="L-ln-items">
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul class="nav-list op"> 
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./index.html#about-me">About</a></li>
+                <li><a href="./index.html#port">Portfolio</a></li>
+                <li><a href="./index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="R-ln-items op">
+            <a href="https://www.instagram.com/saksham3925/"><img src="https://img.icons8.com/fluent/30/000000/instagram-new.png" /></a>
+            <a href="https://www.facebook.com/saksham.sharma.73594"><img src="https://img.icons8.com/fluent/30/000000/facebook-new.png" /></a>
+            <a href="https://github.com/saksham1709"><img src="https://img.icons8.com/color/30/000000/github--v1.png" /></a>
+        </div>
+    </nav>
+    <section>
+        <section class="project">
+            <h1>My Projects</h1>
+        </section>
+        <section class="sec">
+            <div class="about-box">
+                <a href="https://saksham1709.github.io/car.github.io/">
+                    <h1 class="about-head">
+                        Running Car
+                    </h1>
+                </a>
+                <p class="about-para">
+                    Given is a screenshot of the project running car , working  completely using HTML and CSS .
+                    HTML was used for making up the skeleton of the car and background whereas CSS played the key role in the movement of tyres and position of car .  
+                </p>
+            </div>
+            <div class="about-img">
+                <img src="./img/car.jpg" class="ab-img">
+            </div>
+        </section>
+        <section class="sec sec-left">
+            <div class="about-box">
+                <a href="https://saksham1709.github.io/clockproject.github.io/">
+                    <h1 class="about-head">
+                        3 Analog Clocks
+                    </h1>
+                </a>
+                <p class="about-para">
+                   This project consists of three real time working analog clocks , placed one over top of the other in a 2-D plane . 
+                </p>
+            </div>
+            <div class="about-img">
+                <img src="./img/clock.jpg" class="ab-img">
+            </div>
+        </section>
+    </section> 
+    <footer class="background">
+        <p class="text-footer">
+            Copyright &copy; 2021 - SAKSHAM SHARMA - All rights reserved
+        </p>
+    </footer>
+    <script>
+        burger = document.querySelector('.burger');
+        navbar = document.querySelector('.lower-nav');
+        navlist = document.querySelector('.nav-list');
+        icons = document.querySelector('.R-ln-items');
+
+        burger.addEventListener('click', () => {
+            navlist.classList.toggle('op');
+            navbar.classList.toggle('resp');
+            icons.classList.toggle('op');
+            icons.classList.toggle('ic');
+        })
+
+        macburger = document.querySelector('.mac-burger');
+        unav = document.querySelector('.upper-nav');
+        rnav = document.querySelector('.L-un-items');
+        lnav = document.querySelector('.R-un-items');
+
+        macburger.addEventListener('click',()=>{
+            unav.classList.toggle('respo');
+            lnav.classList.toggle('opac');
+        })
+    </script>
+</body>
+</html>
