@@ -412,7 +412,13 @@
         width: 62%;
     }
     .intro{
-        height: 70vh;
+        height: 40vh;
+    }
+    .me{
+        height: 40vh;
+    }
+    .contact{
+        height: 40vh;
     }
 }
 @media only screen and (min-width:716px) and (max-width: 845px){
@@ -423,16 +429,16 @@
         padding: 0px 26px;
     }
     .intro{
-        height: 60vh;
+        height: 42vh;
     }
     .me-box{
         margin-top: 6px;
     }
     .me{
-        height: 62vh;
+        height: 46vh;
     }
     .contact{
-        height: 56vh;
+        height: 42vh;
     }
 }
 @media only screen and (max-width:715px){
